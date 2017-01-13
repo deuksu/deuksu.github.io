@@ -1,6 +1,6 @@
 # Gradle 기본설정
 
-```
+```java
 apply plugin: 'java'
 apply plugin: 'eclipse-wtp' 
 apply plugin: 'war'
