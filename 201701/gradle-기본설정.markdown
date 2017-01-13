@@ -1,3 +1,6 @@
+# Gradle 기본설정
+
+```
 apply plugin: 'java'
 apply plugin: 'eclipse-wtp' 
 apply plugin: 'war'
@@ -64,3 +67,4 @@ uploadArchives {
        }
     }
 }
+```
