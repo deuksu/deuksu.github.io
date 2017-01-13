@@ -47,12 +47,6 @@ repositories {
 }
  
 dependencies {
-    // ${version.~}변수는 위에서 정의한 버전으로 사용됩니다.
-    providedCompile "javax.servlet:javax.servlet-api:${version.servletAPI}"
-     
-    compile "org.springframework:spring-webmvc:${version.spring}"
-     
-    compile "org.slf4j:slf4j-api:${version.slf4j}"
     compile group: 'commons-collections', name: 'commons-collections', version: "${version.commonsCollections}"
     testCompile group: 'junit', name: 'junit', version: "${version.junit}"
 }
