@@ -1,14 +1,8 @@
 # xml parsing :: javax.xml.bind.*
 <hr/>
 
-```
-
-  /**
-   * Unmarshaller 생성( no thread safe이기 때문에 항시 생성해서 처리하도록 한다.  )
-   * @method unmarshal
-   * @see
-   * @return Unmarshaller
-   */
+``` 
+  // no thread safe이기 때문에 항시 생성해서 처리하도록 한다.
   private Unmarshaller getUnmarshaller() {
     JAXBContext jaxbContext = null;
     Unmarshaller jaxbUnmarshaller = null;
@@ -23,14 +17,6 @@
     return jaxbUnmarshaller;
   }
   
-    /**
-   * xml feed 받기 
-   * @method getXmlFeed
-   * @see
-   * @param strUrl
-   * @return
-   * @throws Exception String
-   */
   private String getXmlFeed(String strUrl) throws Exception 
   {
     Writer writer = new StringWriter();
@@ -64,11 +50,10 @@
     return writer.toString();
   }  
   
- // call  
+ //call  
  this.getUnmarshaller().unmarshal(new StringReader(this.getXmlFeed("http://.."))); 
  
- 
- ```
+  ``` 
  
  <hr/>
  
