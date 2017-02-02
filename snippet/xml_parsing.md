@@ -1,6 +1,6 @@
 # xml parsing :: javax.xml.bind.*
 
-``` 
+```
   // no thread safe이기 때문에 항시 생성해서 처리하도록 한다.
   private Unmarshaller getUnmarshaller() {
     JAXBContext jaxbContext = null;
@@ -51,7 +51,4 @@
   
  //call  
  this.getUnmarshaller().unmarshal(new StringReader(this.getXmlFeed("http://.."))); 
- 
-``` 
- 
-  
+ ```
