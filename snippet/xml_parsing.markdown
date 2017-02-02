@@ -63,8 +63,8 @@
     return writer.toString();
   }  
   
- // call 
- this.getUnmarshaller().unmarshal(this.getXmlFeed("http://....")); 
+ // call  
+ this.getUnmarshaller().unmarshal(new StringReader(this.getXmlFeed("http://...."))); 
  ```
  
   
